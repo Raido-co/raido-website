@@ -1,5 +1,40 @@
+body {
+    background-color: #000;
+    color: #fff;
+    padding-top: 20px; 
+}
 
 /* Navbar */
-.navbar.bg-dark {
+.navbar-dark.bg-dark {
     background-color: #000000 !important;
+    padding: 10px 0; 
+}
+
+.navbar-dark .navbar-brand,
+.navbar-dark .navbar-nav .nav-link,
+.btn-custom {
+    display: flex;
+    align-items: center; 
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+    margin-right: 15px; 
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+/* Custom button style */
+.btn-custom {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    margin-right: 15px; 
+}
+
+.btn-custom:hover {
+    background-color: #ccc;
+    color: #000;
 }
