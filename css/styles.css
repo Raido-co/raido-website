@@ -1,40 +1,71 @@
 body {
-    background-color: #000;
-    color: #fff;
-    padding-top: 20px; 
+  background-color: #000;
+  color: #fff;
+  padding-top: 20px;
 }
 
 /* Navbar */
 .navbar-dark.bg-dark {
-    background-color: #000000 !important;
-    padding: 10px 0; 
+  background-color: #000000 !important;
+  padding: 10px 0;
 }
 
 .navbar-dark .navbar-brand,
 .navbar-dark .navbar-nav .nav-link,
 .btn-custom {
-    display: flex;
-    align-items: center; 
+  display: flex;
+  align-items: center;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, 0.9);
-    margin-right: 15px; 
+  color: rgba(255, 255, 255, 0.9);
+  margin-right: 15px;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 /* Custom button style */
 .btn-custom {
-    background-color: #fff;
-    color: #000;
-    border: none;
-    margin-right: 15px; 
+  background-color: #fff;
+  color: #000;
+  border: none;
+  margin-right: 0;
+  padding-right: 15px;
 }
 
 .btn-custom:hover {
-    background-color: #ccc;
-    color: #000;
+  background-color: #ccc;
+  color: #000;
+}
+
+/* Footer */
+footer.bg-dark {
+  background-color: #000000 !important;
+}
+
+footer img {
+  max-height: 40px;
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.9);
+  margin-right: 0;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.up-arrow {
+  display: block;
+  margin-top: 10px;
+  margin-right: 0;
+  max-height: 20px;
+}
+
+.social-icon {
+  text-decoration: none;
 }
