@@ -6,10 +6,9 @@ body {
   font-size: 400;
 }
 
-
 /* Navbar */
 .navbar-dark.bg-dark {
-  background-color: #000000 !important;
+  background-color: #000 !important;
   padding: 10px 0;
 }
 
@@ -23,6 +22,7 @@ body {
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.9);
   margin-right: 15px;
+  transition: color 0.3s;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
@@ -59,14 +59,12 @@ section.text-white h1 {
   font-size: 40px;
   line-height: 1.6;
   font-weight: 400;
-  /* Regular */
   font-family: 'Playfair Display', serif;
 }
 
 .bg-white strong {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 900;
-  /* Poppins Black */
   font-family: 'Poppins', sans-serif;
 }
 
@@ -79,11 +77,9 @@ section.text-white h1 {
   vertical-align: middle;
 }
 
-
-
 /* Footer */
 footer.bg-dark {
-  background-color: #000000 !important;
+  background-color: #000 !important;
 }
 
 footer img {
@@ -103,10 +99,60 @@ footer a:hover {
 .up-arrow {
   display: block;
   margin-top: 10px;
-  margin-right: 0;
   max-height: 20px;
 }
 
 .social-icon {
   text-decoration: none;
+}
+
+/* Animations */
+/* Estilos para el contenedor de la palabra que cambia */
+#changing-word {
+  display: inline-block;
+  overflow: visible;
+  vertical-align: bottom;
+  height: auto;
+}
+
+.word-container {
+  display: inline-block;
+}
+
+/* Fade In Up Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-image {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+/* Hover Underline Animation */
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  background: black;
+  transition: width 0.3s;
+}
+
+.hover-underline-animation:hover::after {
+  width: 100%;
 }
