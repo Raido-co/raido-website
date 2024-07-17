@@ -6,7 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Acerca de | Raido</title>
   <link rel="icon" href="images/favicon.webp" type="image/x-icon">
-  <meta name="description" content="Acerca de Raido">
+  <meta name="description"
+    content="Raido: Comprometidos con la tecnología como motor de transformación para empresas. Especialistas en consultoría tecnológica, DevOps, ciberseguridad, desarrollo web y AI, enfocados en soluciones prácticas para mejorar tus servicios.">
+  <meta name="keywords"
+    content="Raido, tecnología, transformación empresarial, consultoría tecnológica, DevOps, ciberseguridad, desarrollo web, inteligencia artificial, soluciones prácticas, servicio al cliente">
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Google Fonts Poppins (solo regular, semibold y bold) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts Playfair Display (solo regular) -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap" rel="stylesheet">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -16,7 +26,7 @@
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <a class="navbar-brand" href="index.html">
         <img src="images/logo.svg" alt="Raido" width="80" height="30" class="d-inline-block align-text-top">
@@ -40,11 +50,89 @@
       </div>
     </div>
   </nav>
-  <!-- Main content for about page -->
-  <div class="container my-5">
-    <h1>Acerca de Raido</h1>
-    <p>Información sobre Raido...</p>
-  </div>
+
+  <!-- Acerca de -->
+  <section class="about-section bg-white py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2 class="about-title">Acerca de Raido</h2>
+          <p class="about-text">Queremos que nuestros servicios de consultoría en <strong>Desarrollo Web</strong>,
+            <strong>DevOps</strong> y <strong>Ciberseguridad</strong> sigan manteniendo los más altos estándares a nivel
+            global en servicio y tecnología. Nuestra misión es aprovechar el poder de la tecnología para desarrollar
+            proyectos innovadores, de esta manera transformar ideas en realidades o soluciones que tengan un impacto
+            positivo dentro de la organización que se construye a diario. <br><br> Nuestro enfoque se centra en la
+            mejora continua, el desarrollo, la transparencia y la generación de valor. Trabajamos estrechamente con cada
+            uno de nuestros clientes en Colombia y España, proporcionando respaldo ágil y eficiente a través de
+            operaciones remotas. Esta metodología nos permite colaborar con clientes en cualquier parte del mundo,
+            garantizando la fiabilidad de nuestro trabajo y ofreciendo esa personalización que tu y tu equipo necesitan.
+          </p>
+        </div>
+        <div class="col-md-6 text-center py-sm-5 py-0">
+          <img src="images/lab.webp" alt="Imagen de Triangulo Raido" class="img-fluid about-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios Section -->
+  <section class="services-section text-white py-5">
+    <div class="container">
+      <div class="text-center">
+        <p>Nuestros Servicios</p>
+      </div>
+      <div class="row">
+        <!-- DevOps Column -->
+        <div class="col-md-4 col-sm-12 col-divider">
+          <h3>DevOps</h3>
+          <p>En el mundo de TI, las barreras entre equipos pueden frenar la innovación y la eficiencia. Entendemos la
+            importancia de derribar esos obstáculos y fomentar una verdadera sinergia. Con DevOps, impulsamos la
+            evolución continua de tu empresa hacia un futuro más ágil y eficiente.</p>
+        </div>
+        <!-- Ciberseguridad Column -->
+        <div class="col-md-4 col-sm-12 col-divider text-md-center">
+          <h3>Ciberseguridad</h3>
+          <p>Ofrecemos servicios de ciberseguridad personalizados y adaptados a tus necesidades. Desde la evaluación de
+            vulnerabilidades y pruebas de penetración hasta el monitoreo y respuesta a incidentes, nuestro objetivo es
+            proteger tus activos digitales. Además, proporcionamos ciberinteligencia y programas de capacitación para
+            fortalecer la seguridad en tu organización, asegurando que siempre estés preparado contra posibles amenazas.
+          </p>
+        </div>
+        <!-- Desarrollo Web Column -->
+        <div class="col-md-4 col-sm-12 text-md-end">
+          <h3>Desarrollo Web</h3>
+          <p>Te acompañamos en cada etapa del desarrollo web, desde el diseño y la planificación hasta el despliegue y
+            la optimización continua. Nuestro objetivo es brindarte soluciones integrales y personalizadas que impulsen
+            tu presencia digital y aseguren el éxito de tu proyecto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Mision/Vision-->
+  <section class="mision-section text-white py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Empty Column -->
+        <div class="col-md-4 col-sm-12">
+        </div>
+        <!-- Mision Column -->
+        <div class="col-md-8 col-sm-12">
+          <h4>MISIÓN | VISIÓN</h4>
+          <p> Nuestra visión es convertirnos en el socio tecnológico de confianza. Ofrecemos servicios integrados que
+            incluyen desarrollo web, DevOps y ciberseguridad, respaldados por nuestro laboratorio de innovación, el
+            Raido Lab. Nos dedicamos a resolver desafíos complejos con soluciones prácticas y de alto impacto,
+            explorando constantemente nuevas oportunidades para colaborar y crecer. Estamos impulsados por la eficiencia
+            y la innovación, buscando crear un futuro tecnológico más accesible y beneficioso para todos. <br></br>Nos
+            enfocamos en potenciar el impacto positivo de la tecnología mediante el desarrollo de proyectos innovadores.
+            Transformamos ideas en soluciones tangibles que impulsan el crecimiento personal y profesional, tanto de
+            nuestros clientes como de nuestro equipo. Acompañamos a nuestros clientes en su camino hacia un futuro
+            tecnológico seguro y eficiente, operando con transparencia, calidad y mejora continua basados en nuestros
+            valores fundamentales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer class="bg-dark text-white py-4">
     <div class="container">
@@ -69,7 +157,7 @@
               <a class="nav-link" href="lab.html">Lab</a>
             </li>
           </ul>
-          <a href="#hero" class="text-white">
+          <a href="#navbar" class="text-white">
             <img src="images/arrow.svg" alt="Subir" class="mb-2">
           </a>
         </div>
