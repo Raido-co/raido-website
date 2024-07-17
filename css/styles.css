@@ -156,3 +156,90 @@ footer a:hover {
 .hover-underline-animation:hover::after {
   width: 100%;
 }
+
+
+/* About.html */
+/* Estilos específicos para la sección Acerca de */
+
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start; /
+}
+
+.about-section .about-title {
+  font-weight: 900;
+  font-family: 'Poppins', sans-serif; 
+  font-size: 64px;
+  letter-spacing: -0.5px;
+  padding-bottom: 15px;
+}
+
+.about-section .about-text {
+  font-family: 'Poppins', serif;
+  font-size: 20px;
+}
+
+.about-image {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+/* Servicios Section */
+.services-section {
+  color: gray; 
+  padding-top: 20px; 
+  padding-bottom: 20px; 
+}
+
+.services-section h3, .services-section p {
+  font-family: 'Poppins', sans-serif;
+}
+
+.services-section h3 {
+  font-weight: 700;
+  font-size: 35px; 
+  color: white; 
+  margin-top: 0;
+}
+
+.services-section p {
+  font-weight: 400; /* Poppins regular */
+  color: gray; 
+  margin-top: 0; 
+}
+
+.col-divider {
+  position: relative; 
+  padding-right: 15px; 
+}
+
+.col-divider::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0; 
+  width: 1px; 
+  background-color: white; 
+  height: 100%; 
+}
+
+.services-section .text-center p {
+  margin-bottom: 60px; 
+  color: white;
+}
+
+/* MISION Section */
+
+.mision-section h4{
+  font-family: 'Poppins', sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  color: white;
+}
+
+.mision-section p {
+  font-weight: 400; 
+  color: gray; 
+  margin-top: 0; 
+}
