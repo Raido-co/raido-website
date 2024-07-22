@@ -6,6 +6,11 @@ body {
   font-size: 400;
 }
 
+h1, h2{
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+
+}
 /* Navbar */
 .navbar-dark.bg-dark {
   background-color: #000 !important;
@@ -242,4 +247,17 @@ footer a:hover {
   font-weight: 400; 
   color: gray; 
   margin-top: 0; 
+}
+
+
+
+/* Lab.html */
+/* Projects  */	
+.rounded-image {
+  border-radius: 20px; 
+}
+
+
+.lab-image {
+  animation: fadeInUp 0.5s ease-out forwards;
 }
