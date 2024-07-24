@@ -3,14 +3,17 @@ body {
   color: #fff;
   padding-top: 20px;
   font-family: 'Poppins', sans-serif;
-  font-size: 400;
+  font-weight: 400;
 }
 
-h1, h2{
+h1,
+h2,
+h3 {
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
 
 }
+
 /* Navbar */
 .navbar-dark.bg-dark {
   background-color: #000 !important;
@@ -46,6 +49,53 @@ h1, h2{
 .btn-custom:hover {
   background-color: #ccc;
   color: #000;
+}
+
+/* Call to Action Section */
+.cta-section {
+  background-color: #fff;
+  color: #000;
+}
+
+.btn-action {
+  background-color: #000;
+  color: #ffffff !important;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  height: 40px;
+  display: inline-block;
+  line-height: 20px;
+  margin-left: auto;
+  display: block;
+  max-width: 200px;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+  .col-md-4.text-md-right {
+    text-align: left;
+    /* Alinea el botón a la izquierda */
+  }
+
+  .btn-action {
+    margin-left: 0;
+    /* Elimina el margen izquierdo para alinear a la izquierda */
+    max-width: none;
+    /* Permite que el botón se expanda */
+    width: 100%;
+    /* Hace que el botón ocupe todo el ancho disponible */
+  }
+}
+
+.btn-action:hover {
+  background-color: #333;
+  /* Color al pasar el mouse */
+}
+
+.cta-section h3 {
+  font-size: 45px;
 }
 
 /* Hero Section */
@@ -169,12 +219,12 @@ footer a:hover {
 .about-section {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start; /
+  align-items: flex-start;/
 }
 
 .about-section .about-title {
   font-weight: 900;
-  font-family: 'Poppins', sans-serif; 
+  font-family: 'Poppins', sans-serif;
   font-size: 64px;
   letter-spacing: -0.5px;
   padding-bottom: 15px;
@@ -191,31 +241,33 @@ footer a:hover {
 
 /* Servicios Section */
 .services-section {
-  color: gray; 
-  padding-top: 20px; 
-  padding-bottom: 20px; 
+  color: gray;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.services-section h3, .services-section p {
+.services-section h3,
+.services-section p {
   font-family: 'Poppins', sans-serif;
 }
 
 .services-section h3 {
   font-weight: 700;
-  font-size: 35px; 
-  color: white; 
+  font-size: 35px;
+  color: white;
   margin-top: 0;
 }
 
 .services-section p {
-  font-weight: 400; /* Poppins regular */
-  color: gray; 
-  margin-top: 0; 
+  font-weight: 400;
+  /* Poppins regular */
+  color: gray;
+  margin-top: 0;
 }
 
 .col-divider {
-  position: relative; 
-  padding-right: 15px; 
+  position: relative;
+  padding-right: 15px;
 }
 
 .col-divider::after {
@@ -223,20 +275,20 @@ footer a:hover {
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 0; 
-  width: 1px; 
-  background-color: white; 
-  height: 100%; 
+  right: 0;
+  width: 1px;
+  background-color: white;
+  height: 100%;
 }
 
 .services-section .text-center p {
-  margin-bottom: 60px; 
+  margin-bottom: 60px;
   color: white;
 }
 
 /* MISION Section */
 
-.mision-section h4{
+.mision-section h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 35px;
   font-weight: 700;
@@ -244,20 +296,53 @@ footer a:hover {
 }
 
 .mision-section p {
-  font-weight: 400; 
-  color: gray; 
-  margin-top: 0; 
+  font-weight: 400;
+  color: gray;
+  margin-top: 0;
 }
 
 
 
 /* Lab.html */
-/* Projects  */	
+/* Projects  */
 .rounded-image {
-  border-radius: 20px; 
+  border-radius: 20px;
 }
 
 
 .lab-image {
   animation: fadeInUp 0.5s ease-out forwards;
+}
+
+/* Form.html */
+.smaller-image {
+  max-width: 70%;
+}
+
+/* Espaciado para los form-group */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Estilo para el botón */
+.btn-black {
+  background-color: #000000e8;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.btn-black:hover {
+  background-color: #000;
+  /* Color al pasar el mouse */
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .smaller-image {
+    margin-top: 20px;
+  }
 }
